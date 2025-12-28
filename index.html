@@ -128,8 +128,8 @@
                 
                 //d
                 const usn = window.Telegram.WebApp.initDataUnsafe.user;
-                console.log(usn);
-                unityInstance.SendMessage('DataBaseController', 'Get_TG_data', usn.id);
+                console.log(usn.id);
+                unityInstance.SendMessage('DataBaseController', 'Get_TG_data', String(usn.id));
                 //d
 
 
